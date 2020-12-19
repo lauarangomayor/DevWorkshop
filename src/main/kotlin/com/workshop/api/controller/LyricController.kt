@@ -65,7 +65,7 @@ class LyricController (private val lyricService: LyricService) {
                                         .dropLastWhile { it.isEmpty() }
                                         .toTypedArray().size - 1
 
-        return ResponseEntity<LyricStatsResponseDto>(LyricStatsResponseDto(wordsm lines),
+        return ResponseEntity<LyricStatsResponseDto>(LyricStatsResponseDto(words, lines),
                                                      HttpStatus.OK)
     }
 } 
